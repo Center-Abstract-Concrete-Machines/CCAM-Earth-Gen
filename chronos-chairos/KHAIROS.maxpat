@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"minor" : 6,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -66,8 +66,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -458,8 +458,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1124,10 +1124,11 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 189.5, 30.0, 186.0, 26.0 ],
+					"patching_rect" : [ 189.5, 30.0, 186.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 111.5, 32.697639751552799, 107.0, 26.0 ],
-					"text" : "CHRONOS",
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 109.0, 15.0, 112.0, 55.0 ],
+					"text" : "KRONOS/KAIROS",
 					"textcolor" : [ 0.16078431372549, 0.16078431372549, 0.298039215686275, 1.0 ],
 					"textjustification" : 1
 				}
@@ -1144,7 +1145,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 183.0, 25.5, 182.0, 36.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 121.786458333333258, 28.052360248447201, 86.427083333333343, 30.645279503105591 ],
+					"presentation_rect" : [ 105.611111111111143, 19.0, 128.0, 60.0 ],
 					"proportion" : 0.5
 				}
 
@@ -1164,6 +1165,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "BPM[3]",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Hh Density",
 							"parameter_steps" : 127,
 							"parameter_type" : 0,
@@ -1191,6 +1193,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "BPM[4]",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Sn Density",
 							"parameter_steps" : 127,
 							"parameter_type" : 0,
@@ -1218,6 +1221,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "BPM[5]",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Swing",
 							"parameter_steps" : 127,
 							"parameter_type" : 0,
@@ -1245,6 +1249,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "BPM[2]",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Y",
 							"parameter_steps" : 127,
 							"parameter_type" : 0,
@@ -1272,6 +1277,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "BPM[1]",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "X",
 							"parameter_steps" : 127,
 							"parameter_type" : 0,
@@ -1299,6 +1305,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "BPM",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "BPM",
 							"parameter_steps" : 127,
 							"parameter_type" : 0,
@@ -1336,8 +1343,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2356,8 +2363,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4028,8 +4035,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5365,8 +5372,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6717,9 +6724,8 @@
 					"maxclass" : "bpatcher",
 					"name" : "oopsy.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
 					"patching_rect" : [ 452.0, 89.0, 128.0, 128.0 ],
 					"viewvisibility" : 1
 				}
@@ -6780,6 +6786,7 @@
 							"parameter_longname" : "live.gain~",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -6812,8 +6819,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7012,8 +7019,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 6,
+											"minor" : 6,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -7177,8 +7184,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 6,
+											"minor" : 6,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -7932,8 +7939,8 @@
 									"id" : "obj-276",
 									"maxclass" : "newobj",
 									"numinlets" : 3,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 125.0, 659.0, 69.0, 22.0 ],
 									"text" : "go.unit.kink"
 								}
@@ -12286,7 +12293,7 @@
 ,
 					"patching_rect" : [ 184.0, 298.0, 455.150972222222322, 22.0 ],
 					"saved_object_attributes" : 					{
-						"exportfolder" : "Macintosh HD:/Users/juanedflores/Documents/Max 8/MyPatches/CCAM/",
+						"exportfolder" : "C:/Users/galajo/OneDrive/Documents/Max 8/Library/CCAM-EARTH/CCAM-EARTH/chronos-chairos/",
 						"exportname" : "KHAIROS"
 					}
 ,
@@ -13050,29 +13057,29 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "go.unit.kink.gendsp",
-				"bootpath" : "~/Documents/Max 8/Thinking_with_Gen_Book/GeneratingSoundAndOrganizingTime/patchers",
-				"patcherrelativepath" : "../../Thinking_with_Gen_Book/GeneratingSoundAndOrganizingTime/patchers",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
+				"patcherrelativepath" : "../../../../Packages/GeneratingSoundAndOrganizingTime/patchers",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "oopsy.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/oopsy/patchers",
-				"patcherrelativepath" : "../../Packages/oopsy/patchers",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/oopsy/patchers",
+				"patcherrelativepath" : "../../../../Packages/oopsy/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "oopsy.node4max.js",
-				"bootpath" : "~/Documents/Max 8/Packages/oopsy/javascript",
-				"patcherrelativepath" : "../../Packages/oopsy/javascript",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/oopsy/javascript",
+				"patcherrelativepath" : "../../../../Packages/oopsy/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "oopsy.snoop.js",
-				"bootpath" : "~/Documents/Max 8/Packages/oopsy/javascript",
-				"patcherrelativepath" : "../../Packages/oopsy/javascript",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/oopsy/javascript",
+				"patcherrelativepath" : "../../../../Packages/oopsy/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
