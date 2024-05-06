@@ -2755,7 +2755,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 975.0, 188.0, 1280.0, 1048.0 ],
+						"rect" : [ 667.0, 188.0, 1816.0, 1048.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2785,13 +2785,109 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-12",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1747.0, 500.0, 86.0, 22.0 ],
+									"text" : "oopsy.gate.trig"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-13",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1648.0, 500.0, 86.0, 22.0 ],
+									"text" : "oopsy.gate.trig"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1557.0, 500.0, 86.0, 22.0 ],
+									"text" : "oopsy.gate.trig"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-16",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1458.0, 500.0, 86.0, 22.0 ],
+									"text" : "oopsy.gate.trig"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1355.0, 500.0, 86.0, 22.0 ],
+									"text" : "oopsy.gate.trig"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-11",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1256.0, 500.0, 86.0, 22.0 ],
+									"text" : "oopsy.gate.trig"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1165.0, 500.0, 86.0, 22.0 ],
+									"text" : "oopsy.gate.trig"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1066.0, 500.0, 86.0, 22.0 ],
+									"text" : "oopsy.gate.trig"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"color" : [ 0.72156862745098, 0.886274509803922, 1.0, 1.0 ],
 									"id" : "obj-144",
 									"maxclass" : "newobj",
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1632.0, 465.0, 68.0, 22.0 ],
+									"patching_rect" : [ 1722.0, 446.0, 68.0, 22.0 ],
 									"text" : "param sw8"
 								}
 
@@ -2804,7 +2900,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1548.85714285714289, 465.0, 79.0, 22.0 ],
+									"patching_rect" : [ 1639.0, 446.0, 79.0, 22.0 ],
 									"text" : "param sw7"
 								}
 
@@ -2817,7 +2913,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1465.714285714285779, 465.0, 70.0, 22.0 ],
+									"patching_rect" : [ 1556.0, 446.0, 70.0, 22.0 ],
 									"text" : "param sw6"
 								}
 
@@ -2830,7 +2926,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1382.571428571428442, 465.0, 71.0, 22.0 ],
+									"patching_rect" : [ 1473.0, 446.0, 71.0, 22.0 ],
 									"text" : "param sw5"
 								}
 
@@ -2843,7 +2939,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1299.428571428571558, 465.0, 68.0, 22.0 ],
+									"patching_rect" : [ 1355.0, 455.0, 68.0, 22.0 ],
 									"text" : "param sw4"
 								}
 
@@ -2856,7 +2952,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1216.285714285714221, 465.0, 79.0, 22.0 ],
+									"patching_rect" : [ 1256.0, 455.0, 79.0, 22.0 ],
 									"text" : "param sw3"
 								}
 
@@ -2869,7 +2965,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1133.14285714285711, 465.0, 70.0, 22.0 ],
+									"patching_rect" : [ 1165.0, 451.0, 70.0, 22.0 ],
 									"text" : "param sw2"
 								}
 
@@ -2882,7 +2978,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1050.0, 465.0, 71.0, 22.0 ],
+									"patching_rect" : [ 1066.0, 451.0, 71.0, 22.0 ],
 									"text" : "param sw1"
 								}
 
@@ -2917,7 +3013,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 869.333359241485596, 448.00001335144043, 64.0, 22.0 ],
+									"patching_rect" : [ 888.0, 422.0, 64.0, 22.0 ],
 									"text" : "param K 3"
 								}
 
@@ -2929,7 +3025,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 786.666690111160278, 448.00001335144043, 65.0, 22.0 ],
+									"patching_rect" : [ 789.0, 391.333344995975494, 65.0, 22.0 ],
 									"text" : "param N 8"
 								}
 
@@ -2941,8 +3037,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 823.333357870578766, 373.333344459533691, 230.75, 48.0 ],
-									"presentation_linecount" : 3,
+									"patching_rect" : [ 873.0, 345.0, 230.75, 48.0 ],
 									"text" : "how many beats the incoming ramp comprises; e.g. D=16 to divide a ramp-per-measure into 16th note steps"
 								}
 
@@ -2999,7 +3094,7 @@
 								"box" : 								{
 									"id" : "obj-137",
 									"maxclass" : "newobj",
-									"numinlets" : 4,
+									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 614.000018298625946, 476.666680872440338, 107.0, 22.0 ],
@@ -3284,15 +3379,29 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-137", 3 ],
-									"source" : [ "obj-10", 0 ]
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-122", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-137", 1 ],
-									"source" : [ "obj-109", 0 ]
+									"destination" : [ "obj-5", 0 ],
+									"source" : [ "obj-123", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"source" : [ "obj-124", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"source" : [ "obj-125", 0 ]
 								}
 
 							}
@@ -3342,8 +3451,29 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-137", 2 ],
-									"source" : [ "obj-2", 0 ]
+									"destination" : [ "obj-12", 0 ],
+									"source" : [ "obj-144", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-13", 0 ],
+									"source" : [ "obj-145", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
+									"source" : [ "obj-146", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 0 ],
+									"source" : [ "obj-147", 0 ]
 								}
 
 							}
@@ -4146,6 +4276,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "go.quantize.gendsp",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
+				"patcherrelativepath" : "../../../../Packages/GeneratingSoundAndOrganizingTime/patchers",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "go.ramp.div.gendsp",
 				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
 				"patcherrelativepath" : "../../../../Packages/GeneratingSoundAndOrganizingTime/patchers",
@@ -4154,8 +4291,8 @@
 			}
 , 			{
 				"name" : "go.ramp.euclidean.gendsp",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
-				"patcherrelativepath" : "../../../../Packages/GeneratingSoundAndOrganizingTime/patchers",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Library/CCAM-EARTH/CCAM-EARTH/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
@@ -4191,6 +4328,13 @@
 				"name" : "harmoni-terra-shift-voice.gendsp",
 				"bootpath" : "~/OneDrive/Documents/Max 8/Library/CCAM-EARTH/CCAM-EARTH/patchers",
 				"patcherrelativepath" : "../patchers",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "oopsy.gate.trig.gendsp",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/oopsy/code",
+				"patcherrelativepath" : "../../../../Packages/oopsy/code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
