@@ -93,9 +93,13 @@
       "pin": 25
     },
     "gatein1": {
-			"component": "GateIn",
-			"pin": 15
-		}
+      "component": "GateIn",
+      "pin": 15
+    },
+    "cvout": {
+      "component": "CVOuts",
+      "is_default": true
+    }
   },
   "aliases": {
     "knob1_len": "knob1",
