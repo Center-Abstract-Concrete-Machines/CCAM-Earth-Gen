@@ -16,15 +16,15 @@
       "component": "AnalogControl",
       "pin": 19
     },
-    "swing": {
+    "shift_var": {
       "component": "AnalogControl",
       "pin": 20
     },
-    "density_snare": {
+    "timbre": {
       "component": "AnalogControl",
       "pin": 21
     },
-    "density_hihat": {
+    "filter": {
       "component": "AnalogControl",
       "pin": 24
     },
