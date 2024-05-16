@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 6,
+			"minor" : 6,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -126,9 +126,8 @@
 					"maxclass" : "bpatcher",
 					"name" : "oopsy.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
 					"patching_rect" : [ 1056.0, 403.0, 128.0, 128.0 ],
 					"viewvisibility" : 1
 				}
@@ -144,9 +143,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 333.0, 189.5, 186.0, 26.0 ],
+					"patching_rect" : [ 333.0, 189.5, 228.0, 31.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 79.5, 33.697639751552799, 171.0, 26.0 ],
+					"presentation_rect" : [ 79.5, 33.697639751552799, 228.0, 31.0 ],
 					"text" : "POCKET CALCULATOR",
 					"textcolor" : [ 0.062745098039216, 0.062745098039216, 0.117647058823529, 1.0 ],
 					"textjustification" : 1
@@ -184,6 +183,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "BPM[3]",
 							"parameter_mmax" : 1200.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Filter",
 							"parameter_steps" : 127,
 							"parameter_type" : 0,
@@ -211,6 +211,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "BPM[4]",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Timbre",
 							"parameter_steps" : 127,
 							"parameter_type" : 0,
@@ -238,6 +239,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "BPM[5]",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Shift_Var",
 							"parameter_steps" : 127,
 							"parameter_type" : 0,
@@ -265,6 +267,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "BPM[2]",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Euc_Pat",
 							"parameter_steps" : 127,
 							"parameter_type" : 0,
@@ -292,6 +295,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "BPM[1]",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "Env",
 							"parameter_steps" : 127,
 							"parameter_type" : 0,
@@ -319,6 +323,7 @@
 						"valueof" : 						{
 							"parameter_longname" : "BPM",
 							"parameter_mmax" : 1.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "BPM",
 							"parameter_steps" : 127,
 							"parameter_type" : 0,
@@ -500,6 +505,7 @@
 							"parameter_longname" : "live.gain~",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -522,14 +528,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 6,
+							"minor" : 6,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 34.0, 94.0, 1444.0, 854.0 ],
+						"rect" : [ -509.0, 468.0, 2470.0, 1333.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1095,7 +1101,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1767.499998331069946, 160.5, 82.25, 33.0 ],
+									"patching_rect" : [ 1767.499998331069946, 160.5, 82.25, 34.0 ],
 									"text" : "split into two segments"
 								}
 
@@ -1107,7 +1113,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 2045.0, 117.0, 68.0, 47.0 ],
+									"patching_rect" : [ 2045.0, 117.0, 68.0, 48.0 ],
 									"text" : "sync params \nto phasor"
 								}
 
@@ -1130,7 +1136,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1943.75, 479.0, 48.5, 33.0 ],
+									"patching_rect" : [ 1943.75, 479.0, 48.5, 34.0 ],
 									"text" : "shape ramp"
 								}
 
@@ -1142,7 +1148,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1573.75, 250.0, 84.5, 33.0 ],
+									"patching_rect" : [ 1573.75, 250.0, 84.5, 34.0 ],
 									"text" : "blend with unipolar noise"
 								}
 
@@ -1154,7 +1160,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1562.249998331069946, 278.0, 152.5, 33.0 ],
+									"patching_rect" : [ 1562.249998331069946, 278.0, 152.5, 34.0 ],
 									"text" : "scale to -1...1 (bipolar) \nor 0...1 (unipolar)"
 								}
 
@@ -1177,7 +1183,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1877.499998331069946, 216.0, 49.0, 60.0 ],
+									"patching_rect" : [ 1877.499998331069946, 216.0, 49.0, 62.0 ],
 									"text" : "ensure ramps always rising"
 								}
 
@@ -1189,7 +1195,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 2037.0, 408.0, 68.0, 74.0 ],
+									"patching_rect" : [ 2037.0, 408.0, 68.0, 75.0 ],
 									"text" : "invert shape if falling and symmetry enabled"
 								}
 
@@ -1308,7 +1314,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1446.25, 67.0, 104.0, 35.0 ],
+									"patching_rect" : [ 1446.25, 67.0, 104.0, 36.0 ],
 									"text" : "param bipolar 0 @min 0 @max 1"
 								}
 
@@ -1345,7 +1351,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1935.0, 67.0, 65.5, 35.0 ],
+									"patching_rect" : [ 1935.0, 67.0, 65.5, 36.0 ],
 									"text" : "param symmetry"
 								}
 
@@ -1394,7 +1400,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 2009.0, 67.0, 104.0, 35.0 ],
+									"patching_rect" : [ 2009.0, 67.0, 104.0, 36.0 ],
 									"text" : "param shape 0.5 @min 0 @max 1"
 								}
 
@@ -1419,7 +1425,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1747.749998331069946, 67.0, 102.0, 35.0 ],
+									"patching_rect" : [ 1747.749998331069946, 67.0, 102.0, 36.0 ],
 									"text" : "param skew 0.5 @min 0 @max 1"
 								}
 
@@ -1603,8 +1609,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 6,
+											"minor" : 6,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2522,7 +2528,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1727.249998331069946, 1209.75, 82.25, 33.0 ],
+									"patching_rect" : [ 1727.249998331069946, 1209.75, 82.25, 34.0 ],
 									"text" : "split into two segments"
 								}
 
@@ -2534,7 +2540,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 2004.75, 1166.25, 68.0, 47.0 ],
+									"patching_rect" : [ 2004.75, 1166.25, 68.0, 48.0 ],
 									"text" : "sync params \nto phasor"
 								}
 
@@ -2557,7 +2563,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1903.5, 1528.25, 48.5, 33.0 ],
+									"patching_rect" : [ 1903.5, 1528.25, 48.5, 34.0 ],
 									"text" : "shape ramp"
 								}
 
@@ -2569,7 +2575,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1533.5, 1299.25, 84.5, 33.0 ],
+									"patching_rect" : [ 1533.5, 1299.25, 84.5, 34.0 ],
 									"text" : "blend with unipolar noise"
 								}
 
@@ -2581,7 +2587,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1521.999998331069946, 1327.25, 152.5, 33.0 ],
+									"patching_rect" : [ 1521.999998331069946, 1327.25, 152.5, 34.0 ],
 									"text" : "scale to -1...1 (bipolar) \nor 0...1 (unipolar)"
 								}
 
@@ -2604,7 +2610,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1837.249998331069946, 1265.25, 49.0, 60.0 ],
+									"patching_rect" : [ 1837.249998331069946, 1265.25, 49.0, 62.0 ],
 									"text" : "ensure ramps always rising"
 								}
 
@@ -2616,7 +2622,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1996.75, 1457.25, 68.0, 74.0 ],
+									"patching_rect" : [ 1996.75, 1457.25, 68.0, 75.0 ],
 									"text" : "invert shape if falling and symmetry enabled"
 								}
 
@@ -2735,7 +2741,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1512.5, 1072.875, 109.0, 35.0 ],
+									"patching_rect" : [ 1512.5, 1072.875, 109.0, 36.0 ],
 									"text" : "param random 0 @min 0 @max 1"
 								}
 
@@ -2748,7 +2754,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1406.0, 1072.875, 104.0, 35.0 ],
+									"patching_rect" : [ 1406.0, 1072.875, 104.0, 36.0 ],
 									"text" : "param bipolar 0 @min 0 @max 1"
 								}
 
@@ -2785,7 +2791,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1894.75, 1079.375, 65.5, 35.0 ],
+									"patching_rect" : [ 1894.75, 1079.375, 65.5, 36.0 ],
 									"text" : "param symmetry"
 								}
 
@@ -2834,7 +2840,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1996.75, 1032.25, 104.0, 35.0 ],
+									"patching_rect" : [ 1996.75, 1032.25, 104.0, 36.0 ],
 									"text" : "param shape 0.5 @min 0 @max 1"
 								}
 
@@ -2859,7 +2865,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1707.499998331069946, 1056.375, 102.0, 35.0 ],
+									"patching_rect" : [ 1707.499998331069946, 1056.375, 102.0, 36.0 ],
 									"text" : "param skew 0.5 @min 0 @max 1"
 								}
 
@@ -3077,7 +3083,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 429.0, 1052.75, 100.0, 35.0 ],
+									"patching_rect" : [ 429.0, 1052.75, 103.0, 36.0 ],
 									"text" : "param cv1 @min 0. @max 1."
 								}
 
@@ -3210,7 +3216,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1437.0, 654.336802512407303, 314.0, 47.0 ],
+									"patching_rect" : [ 1437.0, 654.336802512407303, 314.0, 48.0 ],
 									"text" : "any signal that rises from exactly zero or less to anything above zero will be treated as a clock trigger; a \"param gate\" will work for this, as should a \"param midi_clock\""
 								}
 
@@ -3226,8 +3232,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 6,
+											"minor" : 6,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3391,8 +3397,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 6,
+											"minor" : 6,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4210,8 +4216,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 705.0, 120.0, 155.0, 22.0 ],
-									"text" : "scale 0. 1. 200. 40."
+									"patching_rect" : [ 705.0, 120.0, 110.0, 22.0 ],
+									"text" : "scale 0. 1. 40. 200."
 								}
 
 							}
@@ -5166,7 +5172,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 979.833344000000011, 927.0, 385.0, 208.0 ],
+									"patching_rect" : [ 979.833344000000011, 927.0, 385.0, 213.0 ],
 									"text" : "quantization scale depends on the ratio of numer/denom.\n\nRegular major/minor scale is 7/12\nClassical pentatonic modes are 5/12\nAugmented scale is 1/3 (4/12)\nWhole tone scale is 1/2 (6/12)\nChromatic is any ratio >= 1 (e.g. 12/12)\n\nGenerally, the quantizer will output `numer` distinct notes for each `denom` range of semitones, so smaller ratios will specify less dense scales. \n\nWorking with prime denominators can make some interesting spaces.\n\nGraham Wakefield 2020"
 								}
 
@@ -5355,7 +5361,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 75.428574000000026, 1346.4375, 125.0, 33.0 ],
+									"patching_rect" : [ 75.428574000000026, 1346.4375, 125.0, 34.0 ],
 									"text" : "a bit of waveshaping for fun"
 								}
 
@@ -5462,7 +5468,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1043.0, 415.0, 56.0, 47.0 ],
+									"patching_rect" : [ 1043.0, 415.0, 56.0, 48.0 ],
 									"text" : "Swap K and N if K>N"
 								}
 
@@ -5721,7 +5727,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 714.111113429069519, 609.11458146572113, 63.888886570930481, 74.0 ],
+									"patching_rect" : [ 714.111113429069519, 609.11458146572113, 63.888886570930481, 75.0 ],
 									"text" : "subtract start-step to get a ramp per event"
 								}
 
@@ -5733,7 +5739,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 867.25, 321.0, 73.0, 47.0 ],
+									"patching_rect" : [ 867.25, 321.0, 73.0, 48.0 ],
 									"text" : "sync params to the beat"
 								}
 
@@ -5745,7 +5751,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1013.5, 623.11458146572113, 95.0, 60.0 ],
+									"patching_rect" : [ 1013.5, 623.11458146572113, 95.0, 62.0 ],
 									"text" : "rounding to get the start-step of most recent event"
 								}
 
@@ -5757,7 +5763,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1013.5, 544.223956614732742, 99.5, 74.0 ],
+									"patching_rect" : [ 1013.5, 544.223956614732742, 99.5, 75.0 ],
 									"text" : "quantize to K/N\nfor Euclidean even spacing\n0, K/N, 2K/N, 3K/N, etc."
 								}
 
@@ -5780,7 +5786,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 744.0, 404.0, 65.0, 33.0 ],
+									"patching_rect" : [ 744.0, 404.0, 65.0, 34.0 ],
 									"text" : "shift ramp by S"
 								}
 
@@ -5816,7 +5822,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 900.875, 255.0, 230.75, 47.0 ],
+									"patching_rect" : [ 900.875, 255.0, 230.75, 48.0 ],
 									"text" : "how many beats the incoming ramp comprises; e.g. D=16 to divide a ramp-per-measure into 16th note steps"
 								}
 
@@ -5945,7 +5951,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 811.25, 527.97395646572113, 76.25, 33.0 ],
+									"patching_rect" : [ 811.25, 527.97395646572113, 76.25, 34.0 ],
 									"text" : "beat step:\n0, 1, ... N-1",
 									"textjustification" : 2
 								}
@@ -9357,7 +9363,7 @@
 ,
 					"patching_rect" : [ 130.0, 435.0, 100.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"exportfolder" : "Macintosh HD:/Users/juanedflores/CCAM-EARTH/pocket-calculator/",
+						"exportfolder" : "C:/GitHub/CCAM-EARTH/pocket-calculator/",
 						"exportname" : "POCKET_CALCULATOR"
 					}
 ,
@@ -9554,78 +9560,78 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "freeverb_allpass.gendsp",
-				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/gen",
-				"patcherrelativepath" : "../../Library/Application Support/Cycling '74/Max 8/Examples/gen",
+				"bootpath" : "~/AppData/Roaming/Cycling '74/Max 8/examples/gen",
+				"patcherrelativepath" : "../../../Users/galajo/AppData/Roaming/Cycling '74/Max 8/examples/gen",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb_comb.gendsp",
-				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/gen",
-				"patcherrelativepath" : "../../Library/Application Support/Cycling '74/Max 8/Examples/gen",
+				"bootpath" : "~/AppData/Roaming/Cycling '74/Max 8/examples/gen",
+				"patcherrelativepath" : "../../../Users/galajo/AppData/Roaming/Cycling '74/Max 8/examples/gen",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "go.biquad.gendsp",
-				"bootpath" : "~/Documents/Max 8/Thinking_with_Gen_Book/GeneratingSoundAndOrganizingTime/patchers",
-				"patcherrelativepath" : "../../Documents/Max 8/Thinking_with_Gen_Book/GeneratingSoundAndOrganizingTime/patchers",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
+				"patcherrelativepath" : "../../../Users/galajo/OneDrive/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "go.harmonic.gendsp",
-				"bootpath" : "~/Documents/Max 8/Thinking_with_Gen_Book/GeneratingSoundAndOrganizingTime/patchers",
-				"patcherrelativepath" : "../../Documents/Max 8/Thinking_with_Gen_Book/GeneratingSoundAndOrganizingTime/patchers",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
+				"patcherrelativepath" : "../../../Users/galajo/OneDrive/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "go.ramp2trig.gendsp",
-				"bootpath" : "~/Documents/Max 8/Thinking_with_Gen_Book/GeneratingSoundAndOrganizingTime/patchers",
-				"patcherrelativepath" : "../../Documents/Max 8/Thinking_with_Gen_Book/GeneratingSoundAndOrganizingTime/patchers",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
+				"patcherrelativepath" : "../../../Users/galajo/OneDrive/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "go.unit.arc.gendsp",
-				"bootpath" : "~/Documents/Max 8/Thinking_with_Gen_Book/GeneratingSoundAndOrganizingTime/patchers",
-				"patcherrelativepath" : "../../Documents/Max 8/Thinking_with_Gen_Book/GeneratingSoundAndOrganizingTime/patchers",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
+				"patcherrelativepath" : "../../../Users/galajo/OneDrive/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "go.unit.lfo.gendsp",
-				"bootpath" : "~/Documents/Max 8/Thinking_with_Gen_Book/GeneratingSoundAndOrganizingTime/patchers",
-				"patcherrelativepath" : "../../Documents/Max 8/Thinking_with_Gen_Book/GeneratingSoundAndOrganizingTime/patchers",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
+				"patcherrelativepath" : "../../../Users/galajo/OneDrive/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "go.unit.triangle.gendsp",
-				"bootpath" : "~/Documents/Max 8/Thinking_with_Gen_Book/GeneratingSoundAndOrganizingTime/patchers",
-				"patcherrelativepath" : "../../Documents/Max 8/Thinking_with_Gen_Book/GeneratingSoundAndOrganizingTime/patchers",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
+				"patcherrelativepath" : "../../../Users/galajo/OneDrive/Documents/Max 8/Packages/GeneratingSoundAndOrganizingTime/patchers",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "oopsy.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/oopsy/patchers",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/oopsy/patchers",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/oopsy/patchers",
+				"patcherrelativepath" : "../../../Users/galajo/OneDrive/Documents/Max 8/Packages/oopsy/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "oopsy.node4max.js",
-				"bootpath" : "~/Documents/Max 8/Packages/oopsy/javascript",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/oopsy/javascript",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/oopsy/javascript",
+				"patcherrelativepath" : "../../../Users/galajo/OneDrive/Documents/Max 8/Packages/oopsy/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "oopsy.snoop.js",
-				"bootpath" : "~/Documents/Max 8/Packages/oopsy/javascript",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/oopsy/javascript",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/oopsy/javascript",
+				"patcherrelativepath" : "../../../Users/galajo/OneDrive/Documents/Max 8/Packages/oopsy/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
