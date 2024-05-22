@@ -20,7 +20,7 @@ Daisy supports code written Arduino (Daisyduino), PureData, and Max/MSP Gen~, an
 "Kronos/Kairos" is a drum machine / clock module that is a good standalone test. Note that the directory contains the JSON file Oopsy needs to correctly interpret the hardware's ins and outs (Oopsy is the MaxMSP library for flashing Gen~ code to Daisy). Check the Daisy WIKI for more complete instructions on flashing the Daisy from Oopsy.
 
 ## Contributing
-The point of the repository is to share! We complete contributions from all software types. 
+The point of the repository is to share! We welcome contributions from all software types. 
 
 ### Guidelines
 - As a matter of course, your contribution should run on the Daisy Seed with the CCAM EARTH hardware.
