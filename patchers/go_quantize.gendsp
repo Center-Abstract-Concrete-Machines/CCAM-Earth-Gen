@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "dsp.gen",
-		"rect" : [ 324.0, 129.0, 1117.0, 547.0 ],
+		"rect" : [ 1137.0, 150.0, 1117.0, 547.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -229,8 +229,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 680.0, 88.5, 94.0, 22.0 ],
-					"text" : "param inversion"
+					"patching_rect" : [ 817.0, 88.5, 79.0, 22.0 ],
+					"text" : "in 5 inversion"
 				}
 
 			}
@@ -238,11 +238,11 @@
 				"box" : 				{
 					"id" : "obj-33",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 472.0, 143.5, 67.0, 22.0 ],
-					"text" : "+ inversion"
+					"patching_rect" : [ 472.0, 143.5, 29.5, 22.0 ],
+					"text" : "+"
 				}
 
 			}
@@ -300,8 +300,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 588.0, 9.5, 84.0, 22.0 ],
-					"text" : "in 2 K @min 1"
+					"patching_rect" : [ 588.0, 9.5, 39.0, 22.0 ],
+					"text" : "in 2 K"
 				}
 
 			}
@@ -360,6 +360,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 1 ],
+					"order" : 0,
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 1 ],
+					"order" : 1,
 					"source" : [ "obj-32", 0 ]
 				}
 
