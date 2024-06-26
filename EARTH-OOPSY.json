@@ -98,8 +98,8 @@
       "component": "GateIn",
       "pin": 15
     },
-    "cvin1": {
-      "component": "GateIn",
+    "cvin2": {
+      "component": "AnalogControl",
       "pin": 16
     },
     "cvout": {

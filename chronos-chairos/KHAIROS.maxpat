@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 631.0, 287.0, 1444.0, 854.0 ],
+		"rect" : [ 132.0, 407.0, 1068.0, 892.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -6840,7 +6840,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 41.0, 84.0, 2494.0, 1283.0 ],
+						"rect" : [ 352.0, 1525.0, 1836.0, 881.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -6869,6 +6869,18 @@
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-114",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 658.0, 398.0, 107.0, 22.0 ],
+									"text" : "oopsy.suggestions"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-358",
 									"maxclass" : "newobj",
@@ -7064,8 +7076,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1698.5, 1511.0, 100.0, 22.0 ],
-									"text" : "out 34 cvout2"
+									"patching_rect" : [ 1693.75, 1517.0, 92.0, 22.0 ],
+									"text" : "out 34 gateout2"
 								}
 
 							}
@@ -7603,7 +7615,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 327.00000011920929, 171.0, 229.0, 22.0 ],
-									"text" : "param knob4_swing 0. @min 1. @max 0."
+									"text" : "param knob4_swing 0. @min 0. @max 1."
 								}
 
 							}
@@ -9937,7 +9949,7 @@
 									"mode" : 0,
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1851.0, 1245.0, 285.0, 510.0 ],
+									"patching_rect" : [ 2088.0, 1243.0, 285.0, 510.0 ],
 									"proportion" : 0.5
 								}
 
@@ -12356,6 +12368,34 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "oopsy.ctrl.smooth2.gendsp",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/oopsy/code",
+				"patcherrelativepath" : "../../../Users/garre/OneDrive/Documents/Max 8/Packages/oopsy/code",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "oopsy.ctrl.smooth3.gendsp",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/oopsy/code",
+				"patcherrelativepath" : "../../../Users/garre/OneDrive/Documents/Max 8/Packages/oopsy/code",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "oopsy.gate.min.gendsp",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/oopsy/code",
+				"patcherrelativepath" : "../../../Users/garre/OneDrive/Documents/Max 8/Packages/oopsy/code",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "oopsy.gate.trig.gendsp",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/oopsy/code",
+				"patcherrelativepath" : "../../../Users/garre/OneDrive/Documents/Max 8/Packages/oopsy/code",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "oopsy.maxpat",
 				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/oopsy/patchers",
 				"patcherrelativepath" : "../../../Users/garre/OneDrive/Documents/Max 8/Packages/oopsy/patchers",
@@ -12374,6 +12414,13 @@
 				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/oopsy/javascript",
 				"patcherrelativepath" : "../../../Users/garre/OneDrive/Documents/Max 8/Packages/oopsy/javascript",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "oopsy.suggestions.gendsp",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Packages/oopsy/code",
+				"patcherrelativepath" : "../../../Users/garre/OneDrive/Documents/Max 8/Packages/oopsy/code",
+				"type" : "gDSP",
 				"implicit" : 1
 			}
  ],
