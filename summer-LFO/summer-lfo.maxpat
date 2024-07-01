@@ -40,6 +40,22 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-13",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 612.0, 385.0, 215.0, 22.0 ],
+					"sig" : 0.0
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -407,7 +423,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 23.0, 23.0, 2354.0, 1366.0 ],
+						"rect" : [ 352.0, 1524.0, 2500.0, 1337.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -549,7 +565,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 995.0, 816.0, 150.0, 20.0 ],
+									"patching_rect" : [ 239.0, 16.0, 150.0, 20.0 ],
 									"text" : "based on go.lfo"
 								}
 
@@ -1179,7 +1195,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 486.0, 458.0, 28.0, 22.0 ],
+									"patching_rect" : [ 268.0, 400.0, 28.0, 22.0 ],
 									"text" : "in 2"
 								}
 
@@ -1192,7 +1208,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 420.0, 458.0, 28.0, 22.0 ],
+									"patching_rect" : [ 202.0, 400.0, 28.0, 22.0 ],
 									"text" : "in 1"
 								}
 
@@ -1204,7 +1220,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 486.0, 541.0, 35.0, 22.0 ],
+									"patching_rect" : [ 268.0, 483.0, 35.0, 22.0 ],
 									"text" : "out 2"
 								}
 
@@ -1216,7 +1232,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 409.0, 541.0, 35.0, 22.0 ],
+									"patching_rect" : [ 191.0, 483.0, 35.0, 22.0 ],
 									"text" : "out 1"
 								}
 
@@ -1253,7 +1269,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 284.5, 369.0, 150.0, 62.0 ],
+									"patching_rect" : [ 265.5, 89.0, 150.0, 62.0 ],
 									"text" : "port cvin 2. These can be reset as both gates or both CV ins in the \"earth-params.json\""
 								}
 
@@ -1264,7 +1280,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 118.5, 398.0, 150.0, 20.0 ],
+									"patching_rect" : [ 99.5, 118.0, 150.0, 20.0 ],
 									"text" : "port cvin 1"
 								}
 
@@ -1277,7 +1293,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 252.5, 428.0, 74.0, 22.0 ],
+									"patching_rect" : [ 233.5, 148.0, 74.0, 22.0 ],
 									"text" : "param cvin1"
 								}
 
@@ -1289,7 +1305,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 118.5, 468.0, 89.0, 22.0 ],
+									"patching_rect" : [ 99.5, 188.0, 89.0, 22.0 ],
 									"text" : "oopsy.gate.min"
 								}
 
@@ -1301,7 +1317,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 116.166677832603455, 504.0, 100.0, 22.0 ],
+									"patching_rect" : [ 97.166677832603455, 224.0, 100.0, 22.0 ],
 									"text" : "oopsy.gate2clock"
 								}
 
@@ -1314,7 +1330,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 118.5, 428.0, 76.0, 22.0 ],
+									"patching_rect" : [ 99.5, 148.0, 76.0, 22.0 ],
 									"text" : "param gate1"
 								}
 
@@ -1879,6 +1895,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-70", 0 ],
 									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-29", 0 ],
+									"source" : [ "obj-16", 4 ]
 								}
 
 							}
@@ -2513,6 +2536,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-1", 11 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-1", 1 ]
 				}
 
 			}

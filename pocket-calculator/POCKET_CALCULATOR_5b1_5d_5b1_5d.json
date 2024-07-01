@@ -1,0 +1,97 @@
+{
+	"class": "Module",
+	"id": "node_46005",
+	"inlets": [
+		{
+			"assist": "in1",
+			"default": 0
+		},
+		{
+			"assist": "in2",
+			"default": 0
+		}
+	],
+	"outlets": [
+		{
+			"assist": "out1"
+		}
+	],
+	"imports": {
+		
+	},
+	"functions": {
+		
+	},
+	"block": {
+		"class": "Block",
+		"id": "node_46016",
+		"children": [
+			{
+				"class": "Statement",
+				"id": "node_46007",
+				"inputs": [
+					{
+						"class": "Expression",
+						"id": "node_46008",
+						"operator": "add",
+						"inputs": [
+							{
+								"class": "Variable",
+								"id": "node_46009",
+								"name": "in1",
+								"type": "signal t_sample",
+								"source": "box: [add $in1 $in2] => add_965"
+							},
+							{
+								"class": "Variable",
+								"id": "node_46010",
+								"name": "in2",
+								"type": "signal t_sample",
+								"source": "box: [add $in1 $in2] => add_965"
+							}
+						],
+						"attributes": {
+							
+						},
+						"type": "signal t_sample",
+						"source": "box: [add $in1 $in2] => add_965"
+					}
+				],
+				"outputs": [
+					{
+						"class": "Variable",
+						"id": "node_46011",
+						"name": "add_965",
+						"type": "signal t_sample",
+						"source": "box: [add $in1 $in2] => add_965"
+					}
+				],
+				"source": "box: [add $in1 $in2] => add_965"
+			},
+			{
+				"class": "Statement",
+				"id": "node_46012",
+				"inputs": [
+					{
+						"class": "Variable",
+						"id": "node_46013",
+						"name": "add_965",
+						"type": "signal t_sample",
+						"source": "box: [out 1 $in1] => "
+					}
+				],
+				"outputs": [
+					{
+						"class": "Variable",
+						"id": "node_46014",
+						"name": "out1",
+						"type": "signal t_sample",
+						"source": "box: [out 1 $in1] => "
+					}
+				],
+				"source": "box: [out 1 $in1] => "
+			}
+		]
+	},
+	"source": "patcher: gen.patcher 0000000034F74220 graph 0000000034E8AAD0"
+}

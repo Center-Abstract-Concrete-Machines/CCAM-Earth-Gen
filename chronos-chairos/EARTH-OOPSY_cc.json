@@ -1,30 +1,32 @@
 {
-  "name":"basic_sequencer",
+  "name":"CCAM_EARTH",
+  "som": "seed",
+   "audio": {"channels": 2},
   "defines": {
     "OOPSY_TARGET_HAS_MIDI_INPUT": 0
   },
   "components": {
-    "bpm": {
+    "knob1": {
       "component": "AnalogControl",
       "pin": 17
     },
-    "X": {
+    "knob2": {
       "component": "AnalogControl",
       "pin": 18
     },
-    "Y": {
+    "knob3": {
       "component": "AnalogControl",
       "pin": 19
     },
-    "swing": {
+    "knob4": {
       "component": "AnalogControl",
       "pin": 20
     },
-    "density_snare": {
+    "knob5": {
       "component": "AnalogControl",
       "pin": 21
     },
-    "density_hihat": {
+    "knob6": {
       "component": "AnalogControl",
       "pin": 24
     },
@@ -96,9 +98,19 @@
       "component": "GateIn",
       "pin": 15
     },
-    "cvout": {
+    "cvin2": {
+      "component": "AnalogControl",
+      "pin": 16
+    },
+    "gateout1": {
+      "component": "GateOut",
+	  "pin": 23 
+
+    }
+    "cvout2": {
       "component": "CVOuts",
-      "is_default": true
+	  "pin": 22 
+
     }
   },
   "aliases": {
