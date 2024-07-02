@@ -6840,7 +6840,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 352.0, 1525.0, 1836.0, 881.0 ],
+						"rect" : [ 132.0, 134.0, 1686.0, 908.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -6886,8 +6886,8 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 357.899998784065247, 329.599998891353607, 100.0, 22.0 ],
-									"text" : "out 33 cvout1"
+									"patching_rect" : [ 357.899998784065247, 329.599998891353607, 81.0, 22.0 ],
+									"text" : "out 33 cvout2"
 								}
 
 							}
@@ -7077,7 +7077,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 1693.75, 1517.0, 92.0, 22.0 ],
-									"text" : "out 34 gateout2"
+									"text" : "out 34 gateout1"
 								}
 
 							}
