@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 2,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -41,12 +41,13 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-3",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1050.0, 42.0, 221.0, 22.0 ],
-					"text" : "in 4 comment g @min -0.99 @max 0.99"
+					"patching_rect" : [ 1050.0, 42.0, 269.0, 36.0 ],
+					"text" : "in 4 @name g @min -0.99 @max 0.99 @default -0.5"
 				}
 
 			}
@@ -735,8 +736,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 485.0, 34.5, 154.0, 22.0 ],
-					"text" : "in 3 fb 0.8 @min 0 @max 1"
+					"patching_rect" : [ 485.0, 34.5, 206.0, 22.0 ],
+					"text" : "in 3 fb @default 0.8 @min 0 @max 1"
 				}
 
 			}
