@@ -1,0 +1,200 @@
+{
+	"class": "Module",
+	"id": "node_802823",
+	"inlets": [
+		{
+			"assist": "BPM",
+			"default": 0
+		}
+	],
+	"outlets": [
+		{
+			"assist": "number of samples per loop"
+		}
+	],
+	"imports": {
+		
+	},
+	"functions": {
+		
+	},
+	"block": {
+		"class": "Block",
+		"id": "node_802846",
+		"children": [
+			{
+				"class": "Declaration",
+				"id": "node_802825",
+				"name": "numBeats",
+				"inputs": [
+					{
+						"class": "Constant",
+						"id": "node_802826",
+						"value": "0",
+						"eval": 0,
+						"type": "constant int",
+						"source": "box: [param numBeats 0] => numBeats"
+					}
+				],
+				"attributes": {
+					
+				},
+				"type": "control t_sample",
+				"typename": "Param",
+				"source": "box: [param numBeats 0] => numBeats"
+			},
+			{
+				"class": "Statement",
+				"id": "node_802827",
+				"inputs": [
+					{
+						"class": "Expression",
+						"id": "node_802828",
+						"operator": "div",
+						"inputs": [
+							{
+								"class": "Constant",
+								"id": "node_802829",
+								"value": "60",
+								"eval": 60,
+								"type": "constant int",
+								"source": "box: [rdiv $in1 60] => rdiv_5092"
+							},
+							{
+								"class": "Variable",
+								"id": "node_802830",
+								"name": "in1",
+								"type": "signal t_sample",
+								"source": "box: [rdiv $in1 60] => rdiv_5092"
+							}
+						],
+						"attributes": {
+							
+						},
+						"type": "signal t_sample",
+						"source": "box: [rdiv $in1 60] => rdiv_5092"
+					}
+				],
+				"outputs": [
+					{
+						"class": "Variable",
+						"id": "node_802831",
+						"name": "rdiv_5092",
+						"type": "signal t_sample",
+						"source": "box: [rdiv $in1 60] => rdiv_5092"
+					}
+				],
+				"source": "box: [rdiv $in1 60] => rdiv_5092"
+			},
+			{
+				"class": "Statement",
+				"id": "node_802832",
+				"inputs": [
+					{
+						"class": "Expression",
+						"id": "node_802833",
+						"operator": "mul",
+						"inputs": [
+							{
+								"class": "Variable",
+								"id": "node_802834",
+								"name": "rdiv_5092",
+								"type": "signal t_sample",
+								"source": "box: [mul $in1 samplerate] => mul_5093"
+							},
+							{
+								"class": "Constant",
+								"id": "node_802835",
+								"value": "samplerate",
+								"eval": 44100,
+								"type": "constant int",
+								"source": "box: [mul $in1 samplerate] => mul_5093"
+							}
+						],
+						"attributes": {
+							
+						},
+						"type": "signal t_sample",
+						"source": "box: [mul $in1 samplerate] => mul_5093"
+					}
+				],
+				"outputs": [
+					{
+						"class": "Variable",
+						"id": "node_802836",
+						"name": "mul_5093",
+						"type": "signal t_sample",
+						"source": "box: [mul $in1 samplerate] => mul_5093"
+					}
+				],
+				"source": "box: [mul $in1 samplerate] => mul_5093"
+			},
+			{
+				"class": "Statement",
+				"id": "node_802837",
+				"inputs": [
+					{
+						"class": "Expression",
+						"id": "node_802838",
+						"operator": "mul",
+						"inputs": [
+							{
+								"class": "Variable",
+								"id": "node_802839",
+								"name": "mul_5093",
+								"type": "signal t_sample",
+								"source": "box: [mul $in1 $in2] => mul_5091"
+							},
+							{
+								"class": "Variable",
+								"id": "node_802840",
+								"name": "numBeats",
+								"type": "control t_sample",
+								"source": "box: [mul $in1 $in2] => mul_5091"
+							}
+						],
+						"attributes": {
+							
+						},
+						"type": "signal t_sample",
+						"source": "box: [mul $in1 $in2] => mul_5091"
+					}
+				],
+				"outputs": [
+					{
+						"class": "Variable",
+						"id": "node_802841",
+						"name": "mul_5091",
+						"type": "signal t_sample",
+						"source": "box: [mul $in1 $in2] => mul_5091"
+					}
+				],
+				"source": "box: [mul $in1 $in2] => mul_5091"
+			},
+			{
+				"class": "Statement",
+				"id": "node_802842",
+				"inputs": [
+					{
+						"class": "Variable",
+						"id": "node_802843",
+						"name": "mul_5091",
+						"type": "signal t_sample",
+						"source": "box: [out 1 $in1] => "
+					}
+				],
+				"outputs": [
+					{
+						"class": "Variable",
+						"id": "node_802844",
+						"name": "out1",
+						"type": "signal t_sample",
+						"source": "box: [out 1 $in1] => "
+					}
+				],
+				"source": "box: [out 1 $in1] => "
+			}
+		]
+	},
+	"source": "patcher: gen.patcher 0000000047AD4550 graph 000000003AF06F70"
+}

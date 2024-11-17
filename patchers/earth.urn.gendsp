@@ -1,0 +1,134 @@
+{
+	"patcher" : 	{
+		"fileversion" : 1,
+		"appversion" : 		{
+			"major" : 8,
+			"minor" : 5,
+			"revision" : 7,
+			"architecture" : "x64",
+			"modernui" : 1
+		}
+,
+		"classnamespace" : "dsp.gen",
+		"rect" : [ 990.0, 202.0, 752.0, 960.0 ],
+		"bglocked" : 0,
+		"openinpresentation" : 0,
+		"default_fontsize" : 12.0,
+		"default_fontface" : 0,
+		"default_fontname" : "Arial",
+		"gridonopen" : 1,
+		"gridsize" : [ 15.0, 15.0 ],
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
+		"statusbarvisible" : 2,
+		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
+		"boxanimatetime" : 200,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
+		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
+		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 421.0, 176.0, 65.0, 22.0 ],
+					"text" : "in 2 @size"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-204",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 651.0, 841.0, 35.0, 22.0 ],
+					"text" : "out 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-203",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 231.0, 823.0, 35.0, 22.0 ],
+					"text" : "out 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-176",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 231.0, 212.0, 77.0, 22.0 ],
+					"text" : "in 1 @trigger"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"code" : "// resets the urn when nonzero:\r\nHistory clear(1);\r\n// the backing storage data for the urn\r\nData urn(1024);\r\n// the number of items left in the urn:\r\nHistory count;\r\n// the current output value\r\nHistory value;\r\n// the current output index (0, 1, ... size-1) \r\nHistory index;\r\n// the urn size:\r\nsize = clip(int(in2), 1, 1024);\r\n// trigger:\r\nif (in1) {\r\n\t// which index is this?\r\n\tindex = size - count;\r\n\t// pick a random index:\r\n\tr = floor(abs(noise())*count);\r\n\t// extract the value:\r\n\tvalue = peek(urn, r);\r\n\t// reduce the count of items in the urn:\r\n\tcount -= 1;\r\n\t// replace removed item with top-most value:\r\n\tpoke(urn, peek(urn, count), r);\r\n}\r\n// if the urn is empty, or the size changed,\r\n// or someone said 'clear', reubuild it:\r\nif (count == 0 || change(size) || clear) {\r\n\tcount = size;\r\n\t// fill up the urn again\r\n\tfor (i=0; i<size; i+=1) { \r\n\t\tpoke(urn, i, i);\r\n\t}\r\n\t// mark it so\r\n\tclear = 0;\r\n}\r\nout1 = value;\r\nout2 = index;",
+					"fontface" : 0,
+					"fontname" : "<Monospaced>",
+					"fontsize" : 12.0,
+					"id" : "obj-112",
+					"maxclass" : "codebox",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 231.0, 247.5, 439.0, 550.0 ]
+				}
+
+			}
+ ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-203", 0 ],
+					"source" : [ "obj-112", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-204", 0 ],
+					"source" : [ "obj-112", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-112", 0 ],
+					"source" : [ "obj-176", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-112", 1 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+ ]
+	}
+
+}
